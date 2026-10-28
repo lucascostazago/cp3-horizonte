@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colégio Horizonte</title>
+<style>
+  :root { --azul:#1d3a6e; --laranja:#f28c28; --fundo:#f6f7fb; --texto:#1e2430; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family: "Segoe UI", Arial, sans-serif; background:var(--fundo); color:var(--texto); line-height:1.5; }
+  header { background:var(--azul); color:#fff; padding:48px 24px 40px; text-align:center; }
+  header h1 { font-size:2.4rem; letter-spacing:.5px; }
+  header p { opacity:.85; margin-top:6px; }
+  .faixa { height:6px; background:var(--laranja); }
+  main { max-width:960px; margin:0 auto; padding:32px 20px 48px; }
+  h2 { color:var(--azul); margin:28px 0 12px; font-size:1.35rem; }
+  .info { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+  .card { background:#fff; border-radius:10px; padding:16px 18px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  .card b { display:block; color:var(--azul); font-size:.8rem; text-transform:uppercase; letter-spacing:.6px; }
+  .andar { margin-top:8px; }
+  .andar h3 { font-size:1rem; margin:14px 0 8px; }
+  .amb { display:flex; flex-wrap:wrap; gap:8px; }
+  .amb span { background:#fff; border:1px solid #d9deea; border-left:4px solid var(--laranja); border-radius:6px; padding:6px 12px; font-size:.95rem; }
+  footer { text-align:center; font-size:.85rem; color:#667; padding:20px; border-top:1px solid #dde; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Colégio Horizonte</h1>
+  <p>Educação básica: Ensino Fundamental II e Ensino Médio</p>
+</header>
+<div class="faixa"></div>
+<main>
+  <h2>Sobre a escola</h2>
+  <div class="info">
+    <div class="card"><b>Área de atuação</b>Ensino Fundamental II (6º ao 9º ano) e Ensino Médio</div>
+    <div class="card"><b>Alunos</b>Cerca de 480 alunos</div>
+    <div class="card"><b>Equipe</b>42 funcionários, sendo 28 professores</div>
+    <div class="card"><b>Estrutura</b>Prédio de 2 andares com rede segmentada em 8 VLANs</div>
+  </div>
+
+  <h2>Principais ambientes</h2>
+  <div class="andar">
+    <h3>Térreo</h3>
+    <div class="amb">
+      <span>Recepção / Portaria</span><span>Secretaria</span><span>Coordenação</span>
+      <span>Diretoria</span><span>Sala dos Professores</span><span>Biblioteca</span>
+      <span>Sala de TI</span><span>Pátio coberto</span>
+    </div>
+    <h3>1º andar</h3>
+    <div class="amb">
+      <span>Salas de aula 1 a 6</span><span>Laboratório de Informática</span><span>Sala técnica</span>
+    </div>
+  </div>
+</main>
+<footer>Página servida por NGINX em container Docker no SRV-01 (10.10.1.226 · VLAN 40 Servidores)</footer>
+</body>
+</html>
